@@ -1,0 +1,138 @@
+.App {
+    height: 90vh;
+}
+
+.Input {
+    margin-right: 50px;
+    height: 30px;
+}
+
+.Input-hide {
+    -webkit-text-security: disc;
+    grid-area: input;
+}
+
+.Word {
+    grid-area: grid;
+    display: grid;
+    gap: 1vw;
+    grid-template-columns: repeat(auto-fit, 8vw);
+    grid-auto-rows: 8vw;
+    align-content: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.Char {
+    width: 100%;
+    height: 100%;
+}
+
+.Scene {
+    width: 100%;
+    height: 100%;
+    perspective: 600px;
+}
+
+.Card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.Card-face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.Card-face--front {
+    background: black;
+}
+
+.Card-face--back {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-size: 6vw;
+    line-height: 6vw;
+    background: white;
+    transform: rotateY( 180deg );
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    box-shadow: 0 1px 6px 0;
+}
+
+.Card--open {
+    transform: rotateY(180deg);
+}
+
+
+@media screen and (max-width: 481px) {
+    .Grid {
+        gap: 1vw;
+        grid-template-columns: repeat(auto-fit, 8vw);
+        grid-auto-rows: 8vw;
+        align-content: flex-start;
+        padding: 10% 0;
+    }
+
+    .Card-face--back {
+        font-size: 7vw;
+        line-height: 7vw;
+    }
+}
+
+
+.Baraban {
+    position: relative;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.Baraban-wrapper {
+    width: 480px;
+    margin: 50px 50px 0 ;
+}
+
+
+.Baraban-pic {
+    /*position: absolute;*/
+    transition: transform 5s ease-out ;
+    width: 100%;
+}
+.Arrow {
+    position: absolute;
+    bottom: -10px;
+    left: 268px;
+}
+
+.Answer {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-role {
+    width: 200px;
+    height: 85px;
+    font-size: 35px;
+}
+.Answer_wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
