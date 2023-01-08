@@ -1,4 +1,6 @@
 # нас скорую руку слепленная игра "Поле Чудес" на новый год
+https://new-year-game-v9ia.vercel.app
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
