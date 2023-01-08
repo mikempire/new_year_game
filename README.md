@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# нас скорую руку слепленная игра "Поле Чудес" на новый год
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
